@@ -2,21 +2,21 @@
 
 ## Description
 
-This microphone project consist of an electret microphone capsule wired to a home-made USB sound card based on a TS972 dual low noise op-amp and a STM32F446 microcontroller.
+This microphone project consist of an electret microphone capsule wired to a home-made USB sound card based on a TS972 dual low noise op-amp and a STM32F446RET6 microcontroller.
 
-![FinalMicPicture (WIP)]()
+![Final mic picture not available yet]()
 
 ## Software
 
-Work in progress !!!
+More about the software for this microphone [here](https://github.com/Vaarai/USB_Microphone_software).
 
 ## Hardware
 
 The PCB was designed with [Altium Designer](https://www.altium.com/) and printed by [JLCPCB](https://jlcpcb.com/). 
 
-Want to reproduce this design but don't have an Altium license ? 
+Want to reproduce this design but don't want / can't open an Altium project ? 
 
-Don't worry, all necessary fabrication files are located in the [Output (WIP)](./Output) directory.
+Don't worry, all you needs is to download the latest [release](https://github.com/Vaarai/USB_Microphone/releases) on this repo.
 
 ### PCB Bill of material
 
@@ -31,25 +31,25 @@ Don't worry, all necessary fabrication files are located in the [Output (WIP)](.
 
 ### How to print the PCB
 
-Work in progress !!!
-
-Estimated price : 8€ (without shipping fees)
+Firstly, this PCB carry an USB communication, due to the high speed of this protocol the PCB need to follow some rules.
+To avoid you the calculation of these rules I strongly recommend you to use JLCPCB as manufacturer and follow the tutorial below.
 
 If you don't want to modify the design, skip "Generating the fabrication files"
 
 #### Generating the fabrication files
+- You can modify the layout of the PCB, just take care about the USB differential pair.
 - Follow [this tutorial](https://support.jlcpcb.com/article/42-how-to-export-altium-pcb-to-gerber-files) to export the fabrication files once you've modified the design
 - Continue with the steps below
 
 #### Ordering the PCB at JLCPCB : 
 - Go to [JLCPCB](https://jlcpcb.com/) and upload the .zip file
 - In the PCB parameters set "Impedance" to "Yes" and select "JLC7628"
-![PCB Parameters](./media/JLCPCB_Parameters_Impedance.png)
+![PCB Parameters](./pictures/JLCPCB_Parameters_Impedance.png)
 - You can set the PCB color and leave all other parameters by default
 - Proceed to checkout
 
 ### Galery
 
-![3D View Top](./media/3DView_top.png)
-![3D View Top](./media/3DView_bot.png)
-![3D View Top](./media/Schematic.jpg)
+![3D View Top](./pictures/pcb/3DView_top.png)
+![3D View Bottom](./pictures/pcb/3DView_bot.png)
+![PCB Schematic](./pictures/pcb/Schematic.jpg)
